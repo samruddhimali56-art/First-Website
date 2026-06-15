@@ -25,74 +25,69 @@
 
 
        <!-- Navigation Bar  -->
- <div class="container-fluid">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-
-        <!-- for logo -->
-        <a class="navbar-brand" href="index.html">
-            <img style="height:50px; margin-right:100px" src="im1.avif">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="im1.avif" alt="Logo" height="50">
         </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
+        <!-- Mobile Toggle Button -->
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
-
         </button>
 
+        <!-- Navbar Content -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- Search Bar -->
+            <form class="d-flex mx-auto my-2 my-lg-0" style="max-width:400px; width:100%;">
+                <input class="form-control" type="search" placeholder="Search">
+            </form>
 
-                <!-- Search Bar -->
-                <form class="d-flex">
-                    <input style="margin-left:60px; width:400px; border-radius:50px;" class="form-control me-2"
-                        type="search" placeholder="Search" aria-label="Search">
+            <!-- Menu Items -->
+            <ul class="navbar-nav ms-auto align-items-lg-center">
 
-                    <!-- Tabs -->
-                    <div style="margin-left:150px; display:flex; align-items:center;">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#"
+                        role="button" data-bs-toggle="dropdown">
+                        Collections
+                    </a>
 
-                        <li class="nav-item dropdown" style="list-style:none;">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Collections
-                            </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Women's</a></li>
+                        <li><a class="dropdown-item" href="#">Kids</a></li>
+                        <li><a class="dropdown-item" href="#">Men's</a></li>
+                        <li><a class="dropdown-item" href="#">Seasonal</a></li>
+                    </ul>
+                </li>
 
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Women's</a></li>
-                                <li><a class="dropdown-item" href="#">Kids</a></li>
-                                <li><a class="dropdown-item" href="#">Men's</a></li>
-                                <li><a class="dropdown-item" href="#">Seasonal</a></li>
-                            </ul>
-                        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" target="_blank">About</a>
+                </li>
 
-                        <li class="nav-item" style="list-style:none;">
-                            <a class="nav-link active" aria-current="page" href="about.html" target="_blank">About</a>
-                        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" target="_blank">Contact</a>
+                </li>
 
-                        <li class="nav-item" style="list-style:none;">
-                            <a class="nav-link active" aria-current="page" href="contact.html" target="_blank">Contact</a>
-                        </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="help.html" target="_blank">Services</a>
+                </li>
 
-                        <li class="nav-item" style="list-style:none;">
-                            <a class="nav-link active" aria-current="page" href="help.html" target="_blank">Services</a>
-                        </li>
-
-                        <button style="margin-left:250px;" class="btn btn-dark">
-                            Login
-                        </button>
-
-                    </div>
-
-                </form>
+                <li class="nav-item ms-lg-3">
+                    <button class="btn btn-dark">Login</button>
+                </li>
 
             </ul>
 
         </div>
 
-    </nav>
-    <br><br><br>
+    </div>
+</nav>
+
 
 
     <!-- Contact 3 - Bootstrap Brain Component -->
